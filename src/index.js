@@ -6,6 +6,10 @@ import { createMuiTheme, ThemeProvider } from "@material-ui/core/styles";
 import * as serviceWorker from './serviceWorker';
 import CssBaseline from "@material-ui/core/CssBaseline";
 import orange from '@material-ui/core/colors/orange';
+import config from './aws-exports'
+import Amplify from 'aws-amplify'
+import { AmplifyAuthenticator } from '@aws-amplify/ui-react';
+Amplify.configure(config)
 
 const darkTheme = createMuiTheme({
   palette: {
@@ -18,7 +22,9 @@ ReactDOM.render(
   <React.StrictMode>
     <ThemeProvider theme={darkTheme}>
       <CssBaseline />
-        <App />
+         <AmplifyAuthenticator>
+   <App />
+ </AmplifyAuthenticator>
     </ThemeProvider>
     
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />

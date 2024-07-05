@@ -1,0 +1,46 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-awsamplifyworkshop-dev-b8475-authRole",
+      "UnauthRoleArn": "arn:aws:iam::061571765153:role/amplify-awsamplifyworkshop-dev-b8475-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::061571765153:role/amplify-awsamplifyworkshop-dev-b8475-authRole",
+      "Region": "us-west-2",
+      "DeploymentBucketName": "amplify-awsamplifyworkshop-dev-b8475-deployment",
+      "UnauthRoleName": "amplify-awsamplifyworkshop-dev-b8475-unauthRole",
+      "StackName": "amplify-awsamplifyworkshop-dev-b8475",
+      "StackId": "arn:aws:cloudformation:us-west-2:061571765153:stack/amplify-awsamplifyworkshop-dev-b8475/b7c667f0-3215-11ef-948e-02f7f1ffa3df",
+      "AmplifyAppId": "d310yir00gn43h",
+      "APIGatewayAuthURL": "https://s3.amazonaws.com/amplify-awsamplifyworkshop-dev-b8475-deployment/amplify-cfn-templates/api/APIGatewayAuthStack.json"
+    },
+    "categories": {
+      "auth": {
+        "awsamplifyworkshopd347c4ae": {}
+      },
+      "function": {
+        "infoFunction": {
+          "deploymentBucketName": "amplify-awsamplifyworkshop-dev-b8475-deployment",
+          "s3Key": "amplify-builds/infoFunction-5a4c5171444438434d65-build.zip"
+        },
+        "databaseFunction": {
+          "deploymentBucketName": "amplify-awsamplifyworkshop-dev-b8475-deployment",
+          "s3Key": "amplify-builds/databaseFunction-2f39347134326d6e336c-build.zip"
+        }
+      },
+      "api": {
+        "mainAPI": {}
+      },
+      "storage": {
+        "items": {}
+      },
+      "hosting": {
+        "amplifyhosting": {
+          "appId": "d310yir00gn43h",
+          "type": "manual"
+        }
+      },
+      "predictions": {
+        "identifyLabels": {}
+      }
+    }
+  }
+}

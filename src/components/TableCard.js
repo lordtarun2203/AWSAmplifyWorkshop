@@ -12,36 +12,33 @@ const TableCard = ({
       <Paper className="card">
         {data.length > 0 ?
           <Table>
-          <TableHead>
-            <TableRow>
-              <TableCell>Item</TableCell>
-              <TableCell align="right">Actions</TableCell>
-            </TableRow>
-          </TableHead>
-          <TableBody>
-            {data.map( item => {
-              return (
-                <TableRow>
+            <TableHead>
+              <TableRow>
+                <TableCell>Item</TableCell>
+                <TableCell align="right">Actions</TableCell>
+              </TableRow>
+            </TableHead>
+            <TableBody>
+              {data.map( item => (
+                <TableRow key={item.timestamp}> {/* Ensure each TableRow has a unique key */}
                   <TableCell>
                     {item.itemName}
                   </TableCell>
                   <TableCell align="right">
                     <IconButton
-                      onClick={()=>removeAction(item.timestamp)}
+                      onClick={() => removeAction(item.timestamp)}
                     > 
                       <DeleteIcon />
                     </IconButton>
                   </TableCell>
                 </TableRow>
-              )
-            }) }
-              
-          </TableBody>
-        </Table>
-      : <Typography>You have not created any items</Typography>}
-    </Paper>
+              ))}
+            </TableBody>
+          </Table>
+        : <Typography>You have not created any items</Typography>}
+      </Paper>
     </Grid>
   )
 }
 
-export default TableCard
+export default TableCard;

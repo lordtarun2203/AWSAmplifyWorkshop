@@ -1,0 +1,14 @@
+{
+  "resourceName": "items",
+  "tableName": "items",
+  "partitionKey": {
+    "fieldName": "user",
+    "fieldType": "string"
+  },
+  "sortKey": {
+    "fieldName": "timestamp",
+    "fieldType": "number"
+  },
+  "gsi": [],
+  "triggerFunctions": []
+}

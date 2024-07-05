@@ -1,0 +1,28 @@
+{
+  "version": 1,
+  "paths": {
+    "/info": {
+      "name": "/info",
+      "lambdaFunction": "infoFunction",
+      "permissions": {
+        "setting": "private",
+        "auth": [
+          "read"
+        ]
+      }
+    },
+    "/items": {
+      "name": "/items",
+      "lambdaFunction": "databaseFunction",
+      "permissions": {
+        "setting": "private",
+        "auth": [
+          "create",
+          "read",
+          "update",
+          "delete"
+        ]
+      }
+    }
+  }
+}
